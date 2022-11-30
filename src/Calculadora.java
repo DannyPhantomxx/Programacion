@@ -22,7 +22,7 @@ class Main {
             case 1: //Binario a decimal
                 System.out.println("Ingrese número binario:");
                 int binario = scanner.nextInt();
-                binario = scanner.nextInt();
+
                 if (!validarBinario(binario)) {
                     System.out.println("Número no válido");
                     return;
@@ -35,7 +35,6 @@ class Main {
             case 2: //Octal a decimal
                 System.out.println("Ingrese número octal:");
                 int octal = scanner.nextInt();
-                octal = scanner.nextInt();
                 if (!validarOctal(octal)) {
                     System.out.println("Número no válido");
                     return;
@@ -65,8 +64,7 @@ class Main {
                 break;
             case 5: //Hexadecimal a decimal
                 System.out.println("Ingrese número hexadecimal:");
-                String hexadecimal = hexadecimalADecimal(decimal);
-                hexadecimal = scanner.nextLine().toUpperCase();
+                String hexadecimal = scanner.nextLine().toUpperCase();
                 if (!validarHexadecimal(hexadecimal)) {
                     System.out.println("Número no válido");
                     return;
